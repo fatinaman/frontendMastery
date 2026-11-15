@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoListApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="toDoForm">
+            <input type="text" id="taskInput" placeholder="what needs to be done?">
+            <button id="addButton" type="submit">ADD TASK</button>
+        </form>
+        <div id="specialBtns">
+            <button id="showActive">SHOW ACTIVE TASKS</button>
+            <button id="showCompleted">SHOW COMPLETED TASKS</button>
+            <button id="showAll">SHOW ALL TASKS</button>
+        </div>
+        <div class="taskContainerDiv">
+            <ul id="taskContainer"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

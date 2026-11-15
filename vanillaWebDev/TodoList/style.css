@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+#toDoForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e1e4e8;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#taskInput:focus {
+    border-color: #4f46e5;
+}
+
+#addButton {
+    padding: 12px 18px;
+    background-color: #4f46e5;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#addButton:hover {
+    background-color: #4338ca;
+}
+
+#specialBtns {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+#specialBtns button {
+    flex: 1;
+    padding: 9px 10px;
+    background-color: #f3f4f6;
+    color: #4b5563;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#specialBtns button.active {
+    background-color: #4f46e5;
+    color: #ffffff;
+    border-color: #4f46e5;
+}
+
+.taskContainerDiv {
+    margin-top: 10px;
+}
+
+#taskContainer {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#taskContainer li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+#taskContainer li:hover {
+    background-color: #f3f4f6;
+}
+
+/* Optional class for completed tasks in JS */
+#taskContainer li.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+    background-color: #f9fafb;
+}
+
+/* Optional styling for buttons inside each <li> (e.g., Delete/Complete) */
+#taskContainer li button {
+    padding: 5px 10px;
+    margin-left: 6px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ef4444;
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+#taskContainer li button:hover {
+    opacity: 0.85;
+}
+
+.active{
+    color: green;
+}
+
+.finished{
+    color: red;
+}
